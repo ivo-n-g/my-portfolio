@@ -77,9 +77,9 @@ body {
   background-color: var(--bg);
   background-image: 
     radial-gradient(
-      circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
       var(--accent-bg) 0%,
-      transparent 30%
+      transparent 80%
     ),
     linear-gradient(var(--accent-bg) 1px, transparent 1px),
     linear-gradient(90deg, var(--accent-bg) 1px, transparent 1px);

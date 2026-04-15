@@ -48,7 +48,11 @@ section::before {
 
 /* Alternating Backgrounds */
 section:nth-of-type(even) {
-  background-color: var(--bg);
+  background-color: transparent;
+}
+
+.header, .footer, section {
+  background-color: transparent;
 }
 
 .header {
