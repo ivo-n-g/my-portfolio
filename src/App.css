@@ -65,24 +65,24 @@ section:nth-of-type(even) {
 .interactive-header {
   background-image: 
     radial-gradient(
-      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      rgba(0, 0, 0, 0.1),
+      600px circle at var(--mouse-x, 300px) var(--mouse-y, 200px),
+      rgba(0, 0, 0, 0.25),
       transparent 100%
     ),
-    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.15) 1px, transparent 1px);
   background-size: 100% 100%, 50px 50px, 50px 50px;
 }
 
 :root.dark .interactive-header {
   background-image: 
     radial-gradient(
-      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      rgba(255, 255, 255, 0.15),
+      600px circle at var(--mouse-x, 300px) var(--mouse-y, 200px),
+      rgba(255, 255, 255, 0.4),
       transparent 100%
     ),
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
 }
 
 .header-container {

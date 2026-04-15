@@ -9,22 +9,13 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (!headerRef.current) return;
-      const rect = headerRef.current.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      headerRef.current.style.setProperty('--mouse-x', `${x}px`);
-      headerRef.current.style.setProperty('--mouse-y', `${y}px`);
+      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
     };
 
-    const header = headerRef.current;
-    if (header) {
-      header.addEventListener('mousemove', handleMouseMove);
-    }
+    window.addEventListener('mousemove', handleMouseMove);
     return () => {
-      if (header) {
-        header.removeEventListener('mousemove', handleMouseMove);
-      }
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
