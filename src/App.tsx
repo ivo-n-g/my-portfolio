@@ -25,6 +25,7 @@ function App() {
 
   return (
     <>
+      <div className="bg-interactive" />
       <Navbar />
       <div className="portfolio-container">
 ...
