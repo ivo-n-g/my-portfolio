@@ -15,6 +15,7 @@ const Header: React.FC = () => {
           <a href="mailto:ivo@example.com">Email</a>
           <a href="https://rw.linkedin.com/in/ivo-nkaka" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/ivo-n-g" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/ivo.n.k/" target="_blank" rel="noopener noreferrer">{t('header.instagram')}</a>
         </div>
         <div className="location">{t('header.location')} | +250784090439</div>
       </div>

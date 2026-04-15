@@ -14,7 +14,8 @@ const resources = {
       },
       header: {
         summary: "Ambitious and hardworking early-career professional with hands-on experience in banking operations and retail management, plus strong programming skills spanning Python, web technologies, and SQL.",
-        location: "Kigali, Rwanda"
+        location: "Kigali, Rwanda",
+        instagram: "Instagram"
       },
       experience: {
         title: "Experience",
@@ -109,7 +110,8 @@ const resources = {
       },
       header: {
         summary: "Professionnel en début de carrière, ambitieux et travailleur, avec une expérience pratique des opérations bancaires et de la gestion de détail, ainsi que de solides compétences en programmation (Python, technologies web et SQL).",
-        location: "Kigali, Rwanda"
+        location: "Kigali, Rwanda",
+        instagram: "Instagram"
       },
       experience: {
         title: "Expérience",
@@ -166,7 +168,7 @@ const resources = {
       },
       skills: {
         technical: "Compétences Techniques",
-        qualities: "Qualités",
+        qualities: "Qualities",
         qualitiesList: ["Ponctuel", "Ambitieux", "Travaillant"],
         other: "Autre : Barista",
         leadership: "Leadership et Prix",
@@ -203,8 +205,9 @@ const resources = {
         contact: "Contacto"
       },
       header: {
-        summary: "Profesional ambicioso y trabajador al inicio de su carrera con experiencia práctica en operaciones bancarias y gestión minorista, además de sólidas habilidades de programación en Python, tecnologías web and SQL.",
-        location: "Kigali, Ruanda"
+        summary: "Profesional ambicioso y trabajador al inicio de su carrera con experiencia pratique en operaciones bancarias y gestión minorista, además de sólidas habilidades de programación en Python, tecnologías web and SQL.",
+        location: "Kigali, Ruanda",
+        instagram: "Instagram"
       },
       experience: {
         title: "Experiencia",
@@ -245,7 +248,7 @@ const resources = {
       },
       education: {
         title: "Educación",
-        certifications: "Certificaciones",
+        certifications: "Certifications",
         university: {
           name: "Universidad Adventista de África Central",
           degree: "Grado en Ingeniería de Software (Junio 2024–Presente)"
@@ -299,7 +302,8 @@ const resources = {
       },
       header: {
         summary: "充满抱负、刻苦钻研的职场新人，在银行业务和零售管理方面拥有实践经验，并具备涵盖 Python、Web 技术和 SQL 的强大编程技能。",
-        location: "卢旺达，基加利"
+        location: "卢旺达，基加利",
+        instagram: "Instagram"
       },
       experience: {
         title: "工作经验",
@@ -394,7 +398,8 @@ const resources = {
       },
       header: {
         summary: "은행 업무 및 소매 관리 분야의 실무 경험과 Python, 웹 기술, SQL을 아우르는 강력한 프로그래밍 능력을 갖춘 야심 차고 성실한 신입 전문가입니다.",
-        location: "르완다 키갈리"
+        location: "르완다 키갈리",
+        instagram: "인스타그램"
       },
       experience: {
         title: "경력사항",
@@ -489,7 +494,8 @@ const resources = {
       },
       header: {
         summary: "Ndi umunyamwete mu ntangiriro z'umwuga wanjye, mfite uburambe mu mirimo ya banki no gucunga amaduka, hamwe n'ubumenyi bukomeye muri gahunda za mudasobwa nka Python, ikoranabuhanga rya web, na SQL.",
-        location: "Kigali, u Rwanda"
+        location: "Kigali, u Rwanda",
+        instagram: "Instagram"
       },
       experience: {
         title: "Uburambe mu kazi",
