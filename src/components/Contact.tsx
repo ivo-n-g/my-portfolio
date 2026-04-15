@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
     setStatus('idle');
     
     try {
-      const response = await fetch('https://formspree.io/f/ivo@example.com', {
+      const response = await fetch('https://formspree.io/f/ganzaivo1@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
