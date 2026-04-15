@@ -71,30 +71,6 @@ section:nth-of-type(even) {
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 }
 
-.spotlight {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(
-    circle,
-    rgba(150, 150, 150, 0.15) 0%,
-    transparent 70%
-  );
-  pointer-events: none;
-  z-index: 5;
-  will-change: transform;
-}
-
-:root.dark .spotlight {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.3) 0%,
-    transparent 70%
-  );
-}
-
 .header-container {
   position: relative;
   z-index: 10;
