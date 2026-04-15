@@ -17,6 +17,7 @@ const Navbar: React.FC = () => {
             <li><a href="#projects">{t('navbar.projects')}</a></li>
             <li><a href="#education">{t('navbar.education')}</a></li>
             <li><a href="#skills">{t('navbar.skills')}</a></li>
+            <li><a href="#contact">{t('navbar.contact')}</a></li>
           </ul>
           <LanguageSwitcher />
           <ThemeToggle />

@@ -9,7 +9,8 @@ const resources = {
         experience: "Experience",
         projects: "Projects",
         education: "Education",
-        skills: "Skills"
+        skills: "Skills",
+        contact: "Contact"
       },
       header: {
         summary: "Ambitious and hardworking early-career professional with hands-on experience in banking operations and retail management, plus strong programming skills spanning Python, web technologies, and SQL.",
@@ -80,6 +81,16 @@ const resources = {
           description: "Competed on national stage demonstrating analytical rigor, teamwork, and standards literacy."
         }
       },
+      contact: {
+        title: "Get in Touch",
+        name: "Name",
+        email: "Email",
+        subject: "Subject",
+        message: "Message",
+        send: "Send Message",
+        success: "Message sent successfully!",
+        error: "Something went wrong. Please try again."
+      },
       footer: {
         rights: "All rights reserved.",
         builtWith: "Built with React & TypeScript",
@@ -93,7 +104,8 @@ const resources = {
         experience: "Expérience",
         projects: "Projets",
         education: "Éducation",
-        skills: "Compétences"
+        skills: "Compétences",
+        contact: "Contact"
       },
       header: {
         summary: "Professionnel en début de carrière, ambitieux et travailleur, avec une expérience pratique des opérations bancaires et de la gestion de détail, ainsi que de solides compétences en programmation (Python, technologies web et SQL).",
@@ -164,6 +176,16 @@ const resources = {
           description: "Compétition au niveau national démontrant rigueur analytique, travail d'équipe et maîtrise des normes."
         }
       },
+      contact: {
+        title: "Contactez-moi",
+        name: "Nom",
+        email: "Email",
+        subject: "Sujet",
+        message: "Message",
+        send: "Envoyer le message",
+        success: "Message envoyé avec succès !",
+        error: "Un problème est survenu. Veuillez réessayer."
+      },
       footer: {
         rights: "Tous droits réservés.",
         builtWith: "Construit avec React & TypeScript",
@@ -177,7 +199,8 @@ const resources = {
         experience: "Experiencia",
         projects: "Proyectos",
         education: "Educación",
-        skills: "Habilidades"
+        skills: "Habilidades",
+        contact: "Contacto"
       },
       header: {
         summary: "Profesional ambicioso y trabajador al inicio de su carrera con experiencia práctica en operaciones bancarias y gestión minorista, además de sólidas habilidades de programación en Python, tecnologías web and SQL.",
@@ -248,6 +271,16 @@ const resources = {
           description: "Competencia a nivel nacional demostrando rigor analítico, trabajo en equipo y alfabetización en estándares."
         }
       },
+      contact: {
+        title: "Ponerse en contacto",
+        name: "Nombre",
+        email: "Email",
+        subject: "Asunto",
+        message: "Mensaje",
+        send: "Enviar mensaje",
+        success: "¡Mensaje enviado con éxito!",
+        error: "Algo salió mal. Por favor, inténtelo de nuevo."
+      },
       footer: {
         rights: "Todos los derechos reservados.",
         builtWith: "Construido con React y TypeScript",
@@ -261,7 +294,8 @@ const resources = {
         experience: "工作经验",
         projects: "项目经验",
         education: "教育背景",
-        skills: "技能专长"
+        skills: "技能专长",
+        contact: "联系我"
       },
       header: {
         summary: "充满抱负、刻苦钻研的职场新人，在银行业务和零售管理方面拥有实践经验，并具备涵盖 Python、Web 技术和 SQL 的强大编程技能。",
@@ -332,6 +366,16 @@ const resources = {
           description: "在国家级舞台上竞技，展现了严密的分析能力、团队协作和标准素养。"
         }
       },
+      contact: {
+        title: "联系我",
+        name: "姓名",
+        email: "电子邮件",
+        subject: "主题",
+        message: "留言",
+        send: "发送消息",
+        success: "消息发送成功！",
+        error: "出错了。请稍后再试。"
+      },
       footer: {
         rights: "版权所有。",
         builtWith: "使用 React 和 TypeScript 构建",
@@ -345,7 +389,8 @@ const resources = {
         experience: "경력사항",
         projects: "프로젝트",
         education: "학력사항",
-        skills: "보유기술"
+        skills: "보유기술",
+        contact: "문의하기"
       },
       header: {
         summary: "은행 업무 및 소매 관리 분야의 실무 경험과 Python, 웹 기술, SQL을 아우르는 강력한 프로그래밍 능력을 갖춘 야심 차고 성실한 신입 전문가입니다.",
@@ -416,6 +461,16 @@ const resources = {
           description: "분석적 엄밀성, 팀워크 및 표준 리터러시를 입증하며 국가 대표로 경쟁함."
         }
       },
+      contact: {
+        title: "연락처",
+        name: "이름",
+        email: "이메일",
+        subject: "제목",
+        message: "메시지",
+        send: "메시지 보내기",
+        success: "메시지가 성공적으로 전송되었습니다!",
+        error: "문제가 발생했습니다. 다시 시도해 주세요."
+      },
       footer: {
         rights: "모든 권리 보유.",
         builtWith: "React 및 TypeScript로 구축됨",
@@ -429,7 +484,8 @@ const resources = {
         experience: "Uburambe",
         projects: "Imishinga",
         education: "Amashuri",
-        skills: "Ubumenyi"
+        skills: "Ubumenyi",
+        contact: "Twandikire"
       },
       header: {
         summary: "Ndi umunyamwete mu ntangiriro z'umwuga wanjye, mfite uburambe mu mirimo ya banki no gucunga amaduka, hamwe n'ubumenyi bukomeye muri gahunda za mudasobwa nka Python, ikoranabuhanga rya web, na SQL.",
@@ -499,6 +555,16 @@ const resources = {
           org: "Ahagarariye u Rwanda (2022)",
           description: "Narushanijwe ku rwego rw'igihugu nerekana ubushobozi bwo gusesengura, gukorera mu ikipe, n'ubumenyi ku bipimo ngenderwaho."
         }
+      },
+      contact: {
+        title: "Twandikire",
+        name: "Izina",
+        email: "Imeri",
+        subject: "Icyo ushaka",
+        message: "Ubutumwa",
+        send: "Ohereza ubutumwa",
+        success: "Ubutumwa bwoherejwe neza!",
+        error: "Hagize ikibazo kiba. Ongera ugerageze."
       },
       footer: {
         rights: "Uburenganzira bwose ni ubw'uwagakoze.",
