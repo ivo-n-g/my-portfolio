@@ -73,38 +73,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-}
-
-.bg-interactive {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
   background-color: var(--bg);
-  background-image: 
-    radial-gradient(
-      600px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
-      rgba(0, 0, 0, 0.3),
-      transparent 100%
-    ),
-    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
-  background-size: 100% 100%, 50px 50px, 50px 50px;
-  z-index: -1;
-  pointer-events: none;
-  background-attachment: fixed;
-}
-
-:root.dark .bg-interactive {
-  background-image: 
-    radial-gradient(
-      600px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
-      rgba(255, 255, 255, 0.4),
-      transparent 100%
-    ),
-    linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
 }
 
 h1,
