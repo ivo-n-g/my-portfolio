@@ -82,7 +82,8 @@ const resources = {
       },
       footer: {
         rights: "All rights reserved.",
-        builtWith: "Built with React & TypeScript"
+        builtWith: "Built with React & TypeScript",
+        visits: "Visits"
       }
     }
   },
@@ -165,7 +166,8 @@ const resources = {
       },
       footer: {
         rights: "Tous droits réservés.",
-        builtWith: "Construit avec React & TypeScript"
+        builtWith: "Construit avec React & TypeScript",
+        visits: "Visites"
       }
     }
   },
@@ -178,7 +180,7 @@ const resources = {
         skills: "Habilidades"
       },
       header: {
-        summary: "Profesional ambicioso y trabajador al inicio de su carrera con experiencia práctica en operaciones bancarias y gestión minorista, además de sólidas habilidades de programación en Python, tecnologías web y SQL.",
+        summary: "Profesional ambicioso y trabajador al inicio de su carrera con experiencia práctica en operaciones bancarias y gestión minorista, además de sólidas habilidades de programación en Python, tecnologías web and SQL.",
         location: "Kigali, Ruanda"
       },
       experience: {
@@ -248,7 +250,8 @@ const resources = {
       },
       footer: {
         rights: "Todos los derechos reservados.",
-        builtWith: "Construido con React y TypeScript"
+        builtWith: "Construido con React y TypeScript",
+        visits: "Visitas"
       }
     }
   },
@@ -331,7 +334,8 @@ const resources = {
       },
       footer: {
         rights: "版权所有。",
-        builtWith: "使用 React 和 TypeScript 构建"
+        builtWith: "使用 React 和 TypeScript 构建",
+        visits: "访问量"
       }
     }
   },
@@ -414,7 +418,8 @@ const resources = {
       },
       footer: {
         rights: "모든 권리 보유.",
-        builtWith: "React 및 TypeScript로 구축됨"
+        builtWith: "React 및 TypeScript로 구축됨",
+        visits: "방문수"
       }
     }
   },
@@ -497,7 +502,8 @@ const resources = {
       },
       footer: {
         rights: "Uburenganzira bwose ni ubw'uwagakoze.",
-        builtWith: "Yubatswe nifashishije React & TypeScript"
+        builtWith: "Yubatswe nifashishije React & TypeScript",
+        visits: "Abasuye"
       }
     }
   }

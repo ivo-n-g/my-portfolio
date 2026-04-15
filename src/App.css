@@ -208,6 +208,22 @@ li {
   margin-top: 40px;
 }
 
+.visit-counter {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--text-h);
+  opacity: 0.8;
+}
+
+.counter {
+  font-family: var(--mono);
+  background: var(--code-bg);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
 @media (max-width: 1024px) {
   main, .header, .footer {
     padding: 0 20px;
