@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
     {
       name: t('projects.countryAggregate.name'),
       description: t('projects.countryAggregate.description'),
-      link: "https://github.com/ivo-n-g/country-aggregate"
+      link: "https://github.com/ivo-n-g/Country-aggregate-procedure"
     }
   ];
 
