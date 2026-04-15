@@ -19,22 +19,24 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="projects">
-      <h2>{t('projects.title')}</h2>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a 
-              href={project.link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              {t('projects.viewGithub')}
-            </a>
-          </div>
-        ))}
+      <div className="section-container">
+        <h2>{t('projects.title')}</h2>
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <div key={index} className="project-card">
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                {t('projects.viewGithub')}
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

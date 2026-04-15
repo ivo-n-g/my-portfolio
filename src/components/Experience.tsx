@@ -21,21 +21,23 @@ const Experience: React.FC = () => {
 
   return (
     <section id="experience" className="experience">
-      <h2>{t('experience.title')}</h2>
-      <div className="experience-list">
-        {experiences.map((exp, index) => (
-          <div key={index} className="experience-item">
-            <div className="exp-header">
-              <h3>{exp.role}, {exp.company}</h3>
-              <span className="exp-period">{exp.period}</span>
+      <div className="section-container">
+        <h2>{t('experience.title')}</h2>
+        <div className="experience-list">
+          {experiences.map((exp, index) => (
+            <div key={index} className="experience-item">
+              <div className="exp-header">
+                <h3>{exp.role}, {exp.company}</h3>
+                <span className="exp-period">{exp.period}</span>
+              </div>
+              <ul>
+                {exp.description.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </div>
-            <ul>
-              {exp.description.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

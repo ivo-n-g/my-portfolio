@@ -6,6 +6,7 @@ import Education from './components/Education'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Reveal from './components/Reveal'
 import './App.css'
 
 function App() {
@@ -14,22 +15,27 @@ function App() {
       <Navbar />
       <div className="portfolio-container">
         <Header />
-        <div className="ticks"></div>
         
         <main>
-          <Experience />
-          <div className="ticks"></div>
+          <Reveal>
+            <Experience />
+          </Reveal>
           
-          <Projects />
-          <div className="ticks"></div>
+          <Reveal>
+            <Projects />
+          </Reveal>
           
-          <Education />
-          <div className="ticks"></div>
+          <Reveal>
+            <Education />
+          </Reveal>
           
-          <Skills />
-          <div className="ticks"></div>
+          <Reveal>
+            <Skills />
+          </Reveal>
           
-          <Contact />
+          <Reveal>
+            <Contact />
+          </Reveal>
         </main>
         
         <Footer />

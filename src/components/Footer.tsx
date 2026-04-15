@@ -16,15 +16,16 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="footer">
-      <div className="ticks"></div>
-      <div className="footer-content">
-        <p>&copy; {new Date().getFullYear()} Ivo Ganza Nkaka. {t('footer.rights')}</p>
-        <p>{t('footer.builtWith')}</p>
-        {visits !== null && (
-          <p className="visit-counter">
-            {t('footer.visits')}: <span className="counter">{visits}</span>
-          </p>
-        )}
+      <div className="footer-container">
+        <div className="footer-content">
+          <p>&copy; {new Date().getFullYear()} Ivo Ganza Nkaka. {t('footer.rights')}</p>
+          <p>{t('footer.builtWith')}</p>
+          {visits !== null && (
+            <p className="visit-counter">
+              {t('footer.visits')}: <span className="counter">{visits}</span>
+            </p>
+          )}
+        </div>
       </div>
     </footer>
   );
