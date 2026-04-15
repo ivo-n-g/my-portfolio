@@ -6,11 +6,11 @@ const Footer: React.FC = () => {
   const [visits, setVisits] = useState<number | null>(null);
 
   useEffect(() => {
-    // Using a public count API to track visits
+    // Using a public counter API to track visits
     // Note: In a real production app, you might want to use a more robust backend
-    fetch('https://api.countapi.xyz/hit/ivo-nkaka-portfolio/visits')
+    fetch('https://api.counterapi.dev/v1/ivo-nkaka-portfolio/visits/up')
       .then(res => res.json())
-      .then(data => setVisits(data.value))
+      .then(data => setVisits(data.count))
       .catch(err => console.error('Error fetching visit count:', err));
   }, []);
 
