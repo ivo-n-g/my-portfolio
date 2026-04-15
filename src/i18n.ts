@@ -7,6 +7,7 @@ const resources = {
     translation: {
       navbar: {
         experience: "Experience",
+        projects: "Projects",
         education: "Education",
         skills: "Skills"
       },
@@ -39,6 +40,18 @@ const resources = {
           ]
         }
       },
+      projects: {
+        title: "Projects",
+        globalInsight: {
+          name: "Global Insight",
+          description: "A data-driven platform providing comprehensive global analytics and insights."
+        },
+        countryAggregate: {
+          name: "Country Aggregate",
+          description: "An analytical tool for aggregating and visualizing socio-economic data by country."
+        },
+        viewGithub: "View on GitHub"
+      },
       education: {
         title: "Education",
         certifications: "Certifications",
@@ -58,6 +71,7 @@ const resources = {
       skills: {
         technical: "Technical Skills",
         qualities: "Qualities",
+        qualitiesList: ["Punctual", "Ambitious", "Hardworking"],
         other: "Other: Barista",
         leadership: "Leadership & Awards",
         award: {
@@ -65,6 +79,10 @@ const resources = {
           org: "Representing Rwanda (2022)",
           description: "Competed on national stage demonstrating analytical rigor, teamwork, and standards literacy."
         }
+      },
+      footer: {
+        rights: "All rights reserved.",
+        builtWith: "Built with React & TypeScript"
       }
     }
   },
@@ -72,6 +90,7 @@ const resources = {
     translation: {
       navbar: {
         experience: "Expérience",
+        projects: "Projets",
         education: "Éducation",
         skills: "Compétences"
       },
@@ -104,6 +123,18 @@ const resources = {
           ]
         }
       },
+      projects: {
+        title: "Projets",
+        globalInsight: {
+          name: "Global Insight",
+          description: "Une plateforme axée sur les données fournissant des analyses et des informations mondiales complètes."
+        },
+        countryAggregate: {
+          name: "Country Aggregate",
+          description: "Un outil analytique pour agréger et visualiser des données socio-économiques par pays."
+        },
+        viewGithub: "Voir sur GitHub"
+      },
       education: {
         title: "Éducation",
         certifications: "Certifications",
@@ -123,6 +154,7 @@ const resources = {
       skills: {
         technical: "Compétences Techniques",
         qualities: "Qualités",
+        qualitiesList: ["Ponctuel", "Ambitieux", "Travaillant"],
         other: "Autre : Barista",
         leadership: "Leadership et Prix",
         award: {
@@ -130,6 +162,10 @@ const resources = {
           org: "Représentant le Rwanda (2022)",
           description: "Compétition au niveau national démontrant rigueur analytique, travail d'équipe et maîtrise des normes."
         }
+      },
+      footer: {
+        rights: "Tous droits réservés.",
+        builtWith: "Construit avec React & TypeScript"
       }
     }
   },
@@ -137,6 +173,7 @@ const resources = {
     translation: {
       navbar: {
         experience: "Experiencia",
+        projects: "Proyectos",
         education: "Educación",
         skills: "Habilidades"
       },
@@ -169,6 +206,18 @@ const resources = {
           ]
         }
       },
+      projects: {
+        title: "Proyectos",
+        globalInsight: {
+          name: "Global Insight",
+          description: "Una plataforma impulsada por datos que proporciona análisis y conocimientos globales completos."
+        },
+        countryAggregate: {
+          name: "Country Aggregate",
+          description: "Una herramienta analítica para agregar y visualizar datos socioeconómicos por país."
+        },
+        viewGithub: "Ver en GitHub"
+      },
       education: {
         title: "Educación",
         certifications: "Certificaciones",
@@ -188,6 +237,7 @@ const resources = {
       skills: {
         technical: "Habilidades Técnicas",
         qualities: "Cualidades",
+        qualitiesList: ["Puntual", "Ambicioso", "Trabajador"],
         other: "Otro: Barista",
         leadership: "Liderazgo y Premios",
         award: {
@@ -195,6 +245,10 @@ const resources = {
           org: "Representando a Ruanda (2022)",
           description: "Competencia a nivel nacional demostrando rigor analítico, trabajo en equipo y alfabetización en estándares."
         }
+      },
+      footer: {
+        rights: "Todos los derechos reservados.",
+        builtWith: "Construido con React y TypeScript"
       }
     }
   },
@@ -202,6 +256,7 @@ const resources = {
     translation: {
       navbar: {
         experience: "工作经验",
+        projects: "项目经验",
         education: "教育背景",
         skills: "技能专长"
       },
@@ -219,7 +274,7 @@ const resources = {
             "管理日常运营、员工排班以及高客流量咖啡店的现金对账。",
             "对咖啡师进行饮品标准、服务质量和安全方面的培训，提高一致性和客户满意度。",
             "监督库存、供应商协调和成本控制，以减少浪费并保持利润率。",
-            "及时解决客户问题，维持温馨的环境和回头客。"
+            "及时解决客户问题，维持温馨的环境 and 回头客。"
           ]
         },
         zigama: {
@@ -233,6 +288,18 @@ const resources = {
             "与团队协作简化日常任务并缩短周转时间。"
           ]
         }
+      },
+      projects: {
+        title: "项目经验",
+        globalInsight: {
+          name: "Global Insight",
+          description: "一个数据驱动的平台，提供全面的全球分析和见解。"
+        },
+        countryAggregate: {
+          name: "Country Aggregate",
+          description: "一个用于按国家汇总和可视化社会经济数据的分析工具。"
+        },
+        viewGithub: "在 GitHub 上查看"
       },
       education: {
         title: "教育背景",
@@ -253,6 +320,7 @@ const resources = {
       skills: {
         technical: "技术技能",
         qualities: "个人特质",
+        qualitiesList: ["守时", "有抱负", "刻苦"],
         other: "其他：咖啡师",
         leadership: "领导力与奖项",
         award: {
@@ -260,6 +328,10 @@ const resources = {
           org: "代表卢旺达 (2022年)",
           description: "在国家级舞台上竞技，展现了严密的分析能力、团队协作和标准素养。"
         }
+      },
+      footer: {
+        rights: "版权所有。",
+        builtWith: "使用 React 和 TypeScript 构建"
       }
     }
   },
@@ -267,6 +339,7 @@ const resources = {
     translation: {
       navbar: {
         experience: "경력사항",
+        projects: "프로젝트",
         education: "학력사항",
         skills: "보유기술"
       },
@@ -299,6 +372,18 @@ const resources = {
           ]
         }
       },
+      projects: {
+        title: "프로젝트",
+        globalInsight: {
+          name: "Global Insight",
+          description: "포괄적인 글로벌 분석 및 통찰력을 제공하는 데이터 기반 플랫폼입니다."
+        },
+        countryAggregate: {
+          name: "Country Aggregate",
+          description: "국가별 사회 경제적 데이터를 집계하고 시각화하기 위한 분석 도구입니다."
+        },
+        viewGithub: "GitHub에서 보기"
+      },
       education: {
         title: "학력사항",
         certifications: "자격증",
@@ -318,6 +403,7 @@ const resources = {
       skills: {
         technical: "기술 스택",
         qualities: "강점",
+        qualitiesList: ["시간 엄수", "야심 찬", "근면 성실"],
         other: "기타: 바리스타",
         leadership: "리더십 및 수상 내역",
         award: {
@@ -325,6 +411,93 @@ const resources = {
           org: "르완다 대표 (2022년)",
           description: "분석적 엄밀성, 팀워크 및 표준 리터러시를 입증하며 국가 대표로 경쟁함."
         }
+      },
+      footer: {
+        rights: "모든 권리 보유.",
+        builtWith: "React 및 TypeScript로 구축됨"
+      }
+    }
+  },
+  rw: {
+    translation: {
+      navbar: {
+        experience: "Uburambe",
+        projects: "Imishinga",
+        education: "Amashuri",
+        skills: "Ubumenyi"
+      },
+      header: {
+        summary: "Ndi umunyamwete mu ntangiriro z'umwuga wanjye, mfite uburambe mu mirimo ya banki no gucunga amaduka, hamwe n'ubumenyi bukomeye muri gahunda za mudasobwa nka Python, ikoranabuhanga rya web, na SQL.",
+        location: "Kigali, u Rwanda"
+      },
+      experience: {
+        title: "Uburambe mu kazi",
+        brewbox: {
+          role: "Umuyobozi",
+          company: "Brew Box Coffee Shop",
+          period: "Kanama 2024 – Mutarama 2025",
+          points: [
+            "Nacunze imirimo ya buri munsi, gahunda z'abakozi, no kugenzura amafaranga mu iduka ry'ikawa rikorerwamo n'abantu benshi.",
+            "Nahaye amahugurwa abategura ikawa ku bijyanye n'ireme ry'ibinyobwa, serivisi nziza, n'umutekano, bituma serivisi irushaho kuba nziza.",
+            "Nagenzuye ibikoresho, imikoranire n'abatanga ibicuruzwa, no kugabanya ibyangizwa kugira ngo inyungu igumeho.",
+            "Nakemuye ibibazo by'abakiriya vuba, nshyira imbere uburyo bwo kubakirana urugwiro kugira ngo bagaruke."
+          ]
+        },
+        zigama: {
+          role: "Umumenyerezamwuga",
+          company: "Zigama CSS Bank",
+          period: "Kamena 2022 – Kanama 2022",
+          points: [
+            "Nafashije mu mirimo y'ishami nko kuvugurura konti, kugenzura inyandiko, no kuyobora imirongo y'abakiriya.",
+            "Nafashije mu kwinjiza amakuru mu mashini, kugenzura imibare y'ibanze, no gukora raporo nifashishije spreadsheets/SQL ngenzurwa.",
+            "Nize amategeko n'uburyo bwo kugenzura abakiriya (KYC/AML) kugira ngo inyandiko zibe zizewe.",
+            "Nafatanyije n'ikipe mu koroshya imirimo ya buri munsi no kwihutisha serivisi."
+          ]
+        }
+      },
+      projects: {
+        title: "Imishinga",
+        globalInsight: {
+          name: "Global Insight",
+          description: "Urubuga rwibanda ku makuru rutanga isesengura ryimbitse ry'ibintu biba ku isi."
+        },
+        countryAggregate: {
+          name: "Country Aggregate",
+          description: "Igikoresho cy'isesengura cyifashishwa mu gukusanya no kwerekana amakuru y'imibereho n'ubukungu by'ibihugu."
+        },
+        viewGithub: "Reba kuri GitHub"
+      },
+      education: {
+        title: "Amashuri",
+        certifications: "Impamyabumenyi",
+        university: {
+          name: "Kaminuza y'Abadiventisti muri Afurika yo hagati (AUCA)",
+          degree: "Impamyabumenyi y'icyiciro cya kabiri cya kaminuza muri Software Engineering (Kamena 2024–Kugeza ubu)"
+        },
+        highschool: {
+          name: "Greenhills Academy",
+          degree: "Impamyabumenyi y'amashuri yisumbuye (2023)"
+        },
+        cisco: {
+          name: "Intangiriro z'imiyoboro (Networking)",
+          org: "Cisco Academy (2025)"
+        }
+      },
+      skills: {
+        technical: "Ubumenyi mu bya tekiniki",
+        qualities: "Imyitwarire",
+        qualitiesList: ["Kubahiriza igihe", "Umunyamwete", "Umukozi ukomeye"],
+        other: "Ibindi: Gutegura ikawa (Barista)",
+        leadership: "Ubuyobozi n'Ibihembo",
+        award: {
+          title: "Uwitabiriye imikino ya 17 y'amajonjora (Standards Olympiads)",
+          org: "Ahagarariye u Rwanda (2022)",
+          description: "Narushanijwe ku rwego rw'igihugu nerekana ubushobozi bwo gusesengura, gukorera mu ikipe, n'ubumenyi ku bipimo ngenderwaho."
+        }
+      },
+      footer: {
+        rights: "Uburenganzira bwose ni ubw'uwagakoze.",
+        builtWith: "Yubatswe nifashishije React & TypeScript"
       }
     }
   }

@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
         <div className="navbar-right">
           <ul className="navbar-links">
             <li><a href="#experience">{t('navbar.experience')}</a></li>
+            <li><a href="#projects">{t('navbar.projects')}</a></li>
             <li><a href="#education">{t('navbar.education')}</a></li>
             <li><a href="#skills">{t('navbar.skills')}</a></li>
           </ul>

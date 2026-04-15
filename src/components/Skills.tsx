@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const Skills: React.FC = () => {
   const { t } = useTranslation();
   const programmingSkills = ["Python", "HTML", "CSS", "SQL", "C", "JavaScript"];
-  const qualities = ["Punctual", "Ambitious", "Hardworking"];
+  const qualities = t('skills.qualitiesList', { returnObjects: true }) as string[];
 
   return (
     <section id="skills" className="skills">
