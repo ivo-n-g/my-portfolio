@@ -1,26 +1,29 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import profilePic from '../assets/profile.jpg';
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
-  const headerRef = useRef<HTMLElement>(null);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const timestamp = new Date().toISOString().split('T')[0];
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
-      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+      setMousePos({ x: e.clientX, y: e.clientY });
     };
 
     window.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   return (
-    <header className="header interactive-header" ref={headerRef}>
+    <header className="header" style={{ cursor: 'crosshair' }}>
+      <div 
+        className="spotlight" 
+        style={{ 
+          transform: `translate(calc(${mousePos.x}px - 50%), calc(${mousePos.y}px - 50%))` 
+        }} 
+      />
       <div className="header-container">
 ...
           <div className="mono" style={{ marginBottom: '20px', opacity: 0.5 }}>

@@ -54,40 +54,52 @@ section:nth-of-type(even) {
 .header, .footer, section {
   background-color: transparent;
 }
-
 .header {
   padding: 160px 0 100px;
   position: relative;
   overflow: hidden;
   background-color: var(--bg);
+  background-image: 
+    linear-gradient(rgba(150, 150, 150, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(150, 150, 150, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
-.interactive-header {
+:root.dark .header {
   background-image: 
-    radial-gradient(
-      600px circle at var(--mouse-x, 300px) var(--mouse-y, 200px),
-      rgba(0, 0, 0, 0.25),
-      transparent 100%
-    ),
-    linear-gradient(rgba(0, 0, 0, 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.15) 1px, transparent 1px);
-  background-size: 100% 100%, 50px 50px, 50px 50px;
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 }
 
-:root.dark .interactive-header {
-  background-image: 
-    radial-gradient(
-      600px circle at var(--mouse-x, 300px) var(--mouse-y, 200px),
-      rgba(255, 255, 255, 0.4),
-      transparent 100%
-    ),
-    linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+.spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    circle,
+    rgba(150, 150, 150, 0.15) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 5;
+  will-change: transform;
+}
+
+:root.dark .spotlight {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
 }
 
 .header-container {
+  position: relative;
+  z-index: 10;
   display: flex;
-  flex-direction: column;
+...
   align-items: flex-start;
   gap: 40px;
 }
