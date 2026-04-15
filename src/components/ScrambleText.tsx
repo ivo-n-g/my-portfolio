@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
 
 interface ScrambleTextProps {
   text: string;
@@ -25,7 +24,7 @@ const ScrambleText: React.FC<ScrambleTextProps> = ({ text, className = '', delay
       interval = setInterval(() => {
         element.innerText = text
           .split("")
-          .map((char, index) => {
+          .map((_, index) => {
             if (index < iteration) {
               return text[index];
             }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Lenis from '@studio-freight/lenis'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
@@ -39,7 +39,7 @@ function App() {
       <Navbar />
       <div className="portfolio-container">
         <Header />
-...
+        
         <main>
           <Reveal>
             <Experience />

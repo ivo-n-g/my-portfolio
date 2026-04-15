@@ -75,7 +75,6 @@ section:nth-of-type(even) {
   position: relative;
   z-index: 10;
   display: flex;
-...
   align-items: flex-start;
   gap: 40px;
 }
