@@ -74,10 +74,17 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  background-color: var(--bg);
   background-image: 
+    radial-gradient(
+      circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      var(--accent-bg) 0%,
+      transparent 30%
+    ),
     linear-gradient(var(--accent-bg) 1px, transparent 1px),
     linear-gradient(90deg, var(--accent-bg) 1px, transparent 1px);
-  background-size: 50px 50px;
+  background-size: 100% 100%, 50px 50px, 50px 50px;
+  background-attachment: fixed;
 }
 
 h1,

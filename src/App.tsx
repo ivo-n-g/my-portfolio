@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Experience from './components/Experience'
@@ -10,11 +11,21 @@ import Reveal from './components/Reveal'
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
     <>
       <Navbar />
       <div className="portfolio-container">
-        <Header />
+...
         
         <main>
           <Reveal>
