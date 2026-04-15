@@ -26,15 +26,15 @@ const Experience: React.FC = () => {
         <div className="experience-list">
           {experiences.map((exp, index) => (
             <div key={index} className="experience-item">
-              <div className="exp-header">
+              <span className="exp-period">{exp.period}</span>
+              <div className="exp-content">
                 <h3>{exp.role}, {exp.company}</h3>
-                <span className="exp-period">{exp.period}</span>
+                <ul>
+                  {exp.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
               </div>
-              <ul>
-                {exp.description.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>

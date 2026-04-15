@@ -9,32 +9,37 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="skills">
       <div className="section-container">
-        <div className="section-grid">
-          <div className="skills-column">
-            <h2>{t('skills.technical')}</h2>
-            <div className="skill-tags">
-              {programmingSkills.map(skill => (
-                <span key={skill} className="tag">{skill}</span>
-              ))}
-            </div>
-            <div className="other-skills">
-              <p><strong>{t('skills.other')}</strong></p>
-            </div>
-            
-            <h2>{t('skills.qualities')}</h2>
-            <div className="skill-tags">
-              {qualities.map(quality => (
-                <span key={quality} className="tag quality-tag">{quality}</span>
-              ))}
+        <div className="experience-list">
+          <div className="experience-item">
+            <span className="exp-period">TECH_STACK</span>
+            <div className="edu-content">
+              <h3>{t('skills.technical').toUpperCase()}</h3>
+              <div className="skill-tags" style={{ marginTop: '20px' }}>
+                {programmingSkills.map(skill => (
+                  <span key={skill} className="tag">{skill}</span>
+                ))}
+              </div>
             </div>
           </div>
-
-          <div className="leadership-column">
-            <h2>{t('skills.leadership')}</h2>
-            <div className="award-item">
-              <h3>{t('skills.award.title')}</h3>
-              <p>{t('skills.award.org')}</p>
-              <p className="award-description">{t('skills.award.description')}</p>
+          <div className="experience-item">
+            <span className="exp-period">ATTRIBUTES</span>
+            <div className="edu-content">
+              <h3>{t('skills.qualities').toUpperCase()}</h3>
+              <div className="skill-tags" style={{ marginTop: '20px' }}>
+                {qualities.map(quality => (
+                  <span key={quality} className="tag">{quality}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="experience-item">
+            <span className="exp-period">LEADERSHIP</span>
+            <div className="edu-content">
+              <h3>{t('skills.award.title').toUpperCase()}</h3>
+              <div style={{ marginTop: '20px' }}>
+                <p><strong>{t('skills.award.org').toUpperCase()}</strong></p>
+                <p>{t('skills.award.description')}</p>
+              </div>
             </div>
           </div>
         </div>

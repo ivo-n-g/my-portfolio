@@ -1,22 +1,27 @@
 .theme-toggle {
-  background: var(--code-bg);
+  background: var(--bg);
   border: 1px solid var(--border);
   color: var(--text-h);
-  padding: 8px;
-  border-radius: 8px;
+  padding: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
+  font-family: var(--mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .theme-toggle:hover {
-  background: var(--accent-bg);
-  border-color: var(--accent-border);
-  color: var(--accent);
+  background: var(--text);
+  color: var(--bg);
 }
 
 .theme-toggle svg {
   display: block;
+  width: 16px;
+  height: 16px;
 }
+

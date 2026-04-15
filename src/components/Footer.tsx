@@ -16,14 +16,21 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-content">
-          <p>&copy; {new Date().getFullYear()} Ivo Ganza Nkaka. {t('footer.rights')}</p>
-          <p>{t('footer.builtWith')}</p>
+      <div className="footer-container mono">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', opacity: 0.6, fontSize: '12px' }}>
+          <div>
+            <p>COPYRIGHT &copy; {new Date().getFullYear()} IVO GANZA NKAKA</p>
+            <p>{t('footer.rights').toUpperCase()}</p>
+          </div>
+          <div>
+            <p>ENGINE: REACT + VITE + TS</p>
+            <p>DEPLOYED: VERCEL / NETLIFY</p>
+          </div>
           {visits !== null && (
-            <p className="visit-counter">
-              {t('footer.visits')}: <span className="counter">{visits}</span>
-            </p>
+            <div>
+              <p>TRAFFIC_LOG: {visits.toString().padStart(6, '0')}</p>
+              <p>STATUS: ONLINE / LIVE</p>
+            </div>
           )}
         </div>
       </div>
