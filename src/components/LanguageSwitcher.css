@@ -1,0 +1,18 @@
+.language-switcher select {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.language-switcher select:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
