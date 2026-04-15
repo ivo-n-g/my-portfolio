@@ -63,8 +63,7 @@ section:nth-of-type(even) {
     linear-gradient(rgba(150, 150, 150, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(150, 150, 150, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
-  background-position: calc(var(--bg-x, 50%) * 0.1) calc(var(--bg-y, 50%) * 0.1);
-  transition: background-position 0.2s ease-out;
+  background-position: calc(var(--bg-x, 0px) * -0.05) calc(var(--bg-y, 0px) * -0.05);
 }
 
 :root.dark .header {

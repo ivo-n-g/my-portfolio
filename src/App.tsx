@@ -9,7 +9,6 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Reveal from './components/Reveal'
-import CustomCursor from './components/CustomCursor'
 import './App.css'
 
 function App() {

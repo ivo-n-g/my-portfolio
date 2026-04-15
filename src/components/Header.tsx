@@ -7,35 +7,30 @@ const Header: React.FC = () => {
   const { t } = useTranslation();
   const headerRef = useRef<HTMLElement>(null);
   const timestamp = new Date().toISOString().split('T')[0];
-useEffect(() => {
-  const handleMouseMove = (e: MouseEvent) => {
-    if (!headerRef.current) return;
 
-    const rect = headerRef.current.getBoundingClientRect();
-    // Calculate position as a percentage of the header size
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!headerRef.current) return;
+      headerRef.current.style.setProperty('--bg-x', `${e.clientX}px`);
+      headerRef.current.style.setProperty('--bg-y', `${e.clientY}px`);
+    };
 
-    headerRef.current.style.setProperty('--bg-x', `${x}%`);
-    headerRef.current.style.setProperty('--bg-y', `${y}%`);
-  };
-
-  const header = headerRef.current;
-  if (header) {
-    header.addEventListener('mousemove', handleMouseMove);
-  }
-
-  return () => {
+    const header = headerRef.current;
     if (header) {
-      header.removeEventListener('mousemove', handleMouseMove);
+      header.addEventListener('mousemove', handleMouseMove);
     }
-  };
-}, []);
+    
+    return () => {
+      if (header) {
+        header.removeEventListener('mousemove', handleMouseMove);
+      }
+    };
+  }, []);
 
-return (
-  <header className="header" ref={headerRef}>
-    <div className="header-container">
-...
+  return (
+    <header className="header" ref={headerRef}>
+      <div className="header-container">
+        <div className="header-text">
           <div className="mono" style={{ marginBottom: '20px', opacity: 0.5 }}>
             USR_ID: 1V0-NKAKA-0001 / VER: 2.0.26 / UPDATED: {timestamp}
           </div>
