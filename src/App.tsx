@@ -35,7 +35,6 @@ function App() {
 
   return (
     <>
-      <CustomCursor />
       <Navbar />
       <div className="portfolio-container">
         <Header />

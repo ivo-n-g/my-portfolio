@@ -1,16 +1,48 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import profilePic from '../assets/profile.jpg';
 import ScrambleText from './ScrambleText';
+import gsap from 'gsap';
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
+  const headerRef = useRef<HTMLElement>(null);
+  const spotlightRef = useRef<HTMLDivElement>(null);
   const timestamp = new Date().toISOString().split('T')[0];
 
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!headerRef.current || !spotlightRef.current) return;
+
+      const rect = headerRef.current.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      gsap.to(spotlightRef.current, {
+        x: x,
+        y: y,
+        duration: 0.6,
+        ease: 'power3.out'
+      });
+    };
+
+    const header = headerRef.current;
+    if (header) {
+      header.addEventListener('mousemove', handleMouseMove);
+    }
+
+    return () => {
+      if (header) {
+        header.removeEventListener('mousemove', handleMouseMove);
+      }
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className="header" ref={headerRef} style={{ cursor: 'crosshair' }}>
+      <div className="header-spotlight" ref={spotlightRef} />
       <div className="header-container">
-        <div className="header-text">
+...
           <div className="mono" style={{ marginBottom: '20px', opacity: 0.5 }}>
             USR_ID: 1V0-NKAKA-0001 / VER: 2.0.26 / UPDATED: {timestamp}
           </div>
