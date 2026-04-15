@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
     {
       name: t('projects.globalInsight.name'),
       description: t('projects.globalInsight.description'),
-      link: "https://github.com/ivo-n-g/global-insight"
+      link: "https://github.com/ivo-n-g/global-insight-repo"
     },
     {
       name: t('projects.countryAggregate.name'),
