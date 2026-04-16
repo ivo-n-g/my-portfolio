@@ -1,11 +1,12 @@
 .navbar {
-  position: absolute;
+  position: sticky;
   top: 0;
   width: 100%;
-  background: transparent;
+  background: var(--bg);
+  backdrop-filter: blur(10px);
   z-index: 1000;
   border-bottom: 1px solid var(--border);
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .navbar-container {
