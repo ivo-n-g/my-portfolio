@@ -60,14 +60,22 @@ section:nth-of-type(even) {
   overflow: hidden;
   background-color: var(--bg);
   background-image: 
+    linear-gradient(rgba(150, 150, 150, 0.2) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, rgba(150, 150, 150, 0.2) 1.5px, transparent 1.5px),
     linear-gradient(rgba(150, 150, 150, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(150, 150, 150, 0.1) 1px, transparent 1px);
-  background-size: 50px 50px;
-  background-position: calc(var(--bg-x, 0px) * -0.05) calc(var(--bg-y, 0px) * -0.05);
+  background-size: 100px 100px, 100px 100px, 40px 40px, 40px 40px;
+  background-position: 
+    calc(var(--bg-x, 0px) * -0.15) calc(var(--bg-y, 0px) * -0.15),
+    calc(var(--bg-x, 0px) * -0.15) calc(var(--bg-y, 0px) * -0.15),
+    calc(var(--bg-x, 0px) * -0.05) calc(var(--bg-y, 0px) * -0.05),
+    calc(var(--bg-x, 0px) * -0.05) calc(var(--bg-y, 0px) * -0.05);
 }
 
 :root.dark .header {
   background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px),
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 }
