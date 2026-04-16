@@ -9,6 +9,7 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="skills">
       <div className="section-container">
+        <h2>{t('skills.technical')}</h2>
         <div className="experience-list">
           <div className="experience-item">
             <span className="exp-period">TECH_STACK</span>
