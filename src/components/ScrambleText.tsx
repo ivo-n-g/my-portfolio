@@ -42,9 +42,6 @@ const ScrambleText: React.FC<ScrambleTextProps> = ({ text, className = '', delay
 
     const timeout = setTimeout(startScramble, delay * 1000);
     
-    // Also scramble on hover
-    element.onmouseover = startScramble;
-
     return () => {
       clearTimeout(timeout);
       clearInterval(interval);
